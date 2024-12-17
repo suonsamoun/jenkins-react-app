@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  react-app:
+    container_name: react-jenkins-app
+    build: .
+    ports:
+      - "8081:80" # Map Nginx port 80 to host port 8080
+    restart: always
